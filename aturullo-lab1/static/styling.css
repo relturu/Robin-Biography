@@ -1,0 +1,15 @@
+.AAB{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width:40px; */
+}
+
+#naming{
+  display: flex;
+  flex-direction: column; 
+}
+
+.topImg{
+  width:35%;
+}
