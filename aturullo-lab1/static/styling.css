@@ -2,12 +2,66 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* width:40px; */
+}
+
+.allbot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body{
+  margin-top:5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#botleftimg{
+  /* margin-left:0px; */
+  width:45%;
+}
+
+#botrightimg{
+  width:25%;
+}
+
+footer{
+  /* bottom:0; */
+  display:flex;
+  font-size:150%;
+  justify-content:center;
+  /* height:50px; */
+  padding-top:5%;
+  padding-bottom:2%;
+  /* position: absolute; */
+  /* width:100%; */
+}
+
+#haiku{
+  /* color:blue; */
+  font-size:200%;
 }
 
 #naming{
   display: flex;
   flex-direction: column; 
+  font-size: 400%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+.navvy{
+  color:inherit;
+  font-size:200%;
+}
+
+#quote{
+  font-size:350%;
 }
 
 .topImg{
