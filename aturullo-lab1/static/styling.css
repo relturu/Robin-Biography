@@ -31,6 +31,10 @@ body>main,body>header{
   width:25%;
 }
 
+.contact{
+  font-size:200%;
+}
+
 .cv-headers{
   text-align:left;
   vertical-align:top;
@@ -43,16 +47,27 @@ footer{
   font-size:150%;
   justify-content:center;
   /* height:50px; */
+  margin-top:7.5%;
   padding-top:5%;
   padding-bottom:2%;
   /* position: absolute; */
   /* width:100%; */
 }
 
+form{
+  /* display:flex;
+  justify-content: space-between; */
+  font-size:150%;
+}
+
 .fun{
   display:flex;
-  font-size:150%;
+  font-size:200%;
   justify-content:center;
+}
+
+.fun-list{
+  font-size:150%;
 }
 
 #haiku{
@@ -60,6 +75,9 @@ footer{
   font-size:200%;
 }
 
+header{
+  /* background:rgb(134, 134, 179); */
+}
 .my-resume{
   color:inherit;
   display:flex;
@@ -95,6 +113,10 @@ nav{
 
 #quote{
   font-size:350%;
+}
+
+.reach-me{
+  border-spacing:10px;
 }
 
 table{
