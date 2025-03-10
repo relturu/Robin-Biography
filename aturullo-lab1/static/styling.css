@@ -49,6 +49,12 @@ footer{
   /* width:100%; */
 }
 
+.fun{
+  display:flex;
+  font-size:150%;
+  justify-content:center;
+}
+
 #haiku{
   /* color:blue; */
   font-size:200%;
