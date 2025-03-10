@@ -1,0 +1,154 @@
+.AAB{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AAb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allbot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body>main,body>header{
+  margin-top:5%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#botleftimg{
+  /* margin-left:0px; */
+  width:45%;
+}
+
+#botrightimg{
+  width:25%;
+}
+
+.contact{
+  font-size:200%;
+}
+
+.cv-headers{
+  text-align:left;
+  vertical-align:top;
+}
+
+footer{
+  /* bottom:0; */
+  background:rgb(134, 134, 179);
+  display:flex;
+  font-size:150%;
+  justify-content:center;
+  /* height:50px; */
+  margin-top:7.5%;
+  padding-top:5%;
+  padding-bottom:2%;
+  /* position: absolute; */
+  /* width:100%; */
+}
+
+form{
+  /* display:flex;
+  justify-content: space-between; */
+  font-size:150%;
+}
+
+/* .form-pt1{
+  display:flex;
+  flex-direction: column;
+}
+
+.form-pt2{
+  display:flex;
+  flex-direction:column;
+} */
+
+.form-overall{
+  display: flex;
+  justify-content: space-between;
+    /* gap: 10px;  */
+    /* Adds space between the columns */
+  width: 80%;
+}
+
+.fun{
+  display:flex;
+  font-size:200%;
+  justify-content:center;
+}
+
+.fun-list{
+  font-size:150%;
+  padding-left:15%;
+  padding-right:15%;
+}
+
+#haiku{
+  /* color:blue; */
+  font-size:200%;
+}
+
+header{
+  /* background:rgb(134, 134, 179); */
+}
+.my-resume{
+  color:rgb(134, 134, 179);;
+  display:flex;
+  font-size:150%;
+  justify-content:center;
+  padding-top:5%;
+  padding-bottom:5%;
+  /* align-items:center; centers items in a flex container vertically */
+  /* text-align:center; only centers items inline content w/in a block, not block itself */
+}
+
+#naming>i{
+  font-size:80%;
+}
+
+#naming{
+  display: flex;
+  flex-direction: column; 
+  font-size: 400%;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding-top:5%;
+  padding-bottom:5%;
+}
+
+.navvy{
+  color:inherit;
+  font-size:200%;
+}
+
+#quote{
+  font-size:350%;
+}
+
+.reach-me{
+  /* border-spacing:10px; */
+  font-size:150%;
+}
+
+table{
+  font-size:125%;
+}
+
+.topImg{
+  width:35%;
+}
+
+td>ul{
+  margin-top:0%;
+  vertical-align:top;
+}
