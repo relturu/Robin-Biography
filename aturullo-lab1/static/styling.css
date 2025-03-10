@@ -4,13 +4,19 @@
   align-items: center;
 }
 
+.AAb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .allbot{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-body{
+body>main,body>header{
   margin-top:5%;
   margin-left: 5%;
   margin-right: 5%;
@@ -25,8 +31,14 @@ body{
   width:25%;
 }
 
+.cv-headers{
+  text-align:left;
+  vertical-align:top;
+}
+
 footer{
   /* bottom:0; */
+  background:rgb(134, 134, 179);
   display:flex;
   font-size:150%;
   justify-content:center;
@@ -40,6 +52,21 @@ footer{
 #haiku{
   /* color:blue; */
   font-size:200%;
+}
+
+.my-resume{
+  color:inherit;
+  display:flex;
+  font-size:150%;
+  justify-content:center;
+  padding-top:5%;
+  padding-bottom:5%;
+  /* align-items:center; centers items in a flex container vertically */
+  /* text-align:center; only centers items inline content w/in a block, not block itself */
+}
+
+#naming>i{
+  font-size:80%;
 }
 
 #naming{
@@ -64,6 +91,15 @@ nav{
   font-size:350%;
 }
 
+table{
+  font-size:125%;
+}
+
 .topImg{
   width:35%;
+}
+
+td>ul{
+  margin-top:0%;
+  vertical-align:top;
 }
