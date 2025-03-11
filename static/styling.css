@@ -111,7 +111,15 @@ form{
 .fun{
   display:flex;
   font-size:200%;
+  font-weight: bold;
   justify-content:center;
+}
+
+.fun>i{
+  background-color:rgb(134, 134, 179);
+  border-radius:15px;
+  color:white;
+  padding:1%;
 }
 
 .fun-list{
@@ -147,12 +155,14 @@ form{
 
 #naming>i{
   background-color:rgb(134, 134, 179);
+  /* font-family: "Big Shoulders Stencil", sans-serif; */
   font-size:80%;
   padding:1%;
 }
 
 #naming{
   background-color:rgb(134, 134, 179);
+  /* font-family: "Big Shoulders Stencil", sans-serif; */
   border-radius: 15px;
   display: flex;
   flex-direction: column; 
@@ -185,9 +195,16 @@ nav{
 }
 
 table{
-  display:flex;
+  border-collapse: separate;
+  border-radius:15px;
+  /* display:flex; */
   font-size:125%;
   justify-content:center;
+
+  border-spacing: 0;
+  border: 1px solid #ccc; /*Add an actual border */
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .topImg{
