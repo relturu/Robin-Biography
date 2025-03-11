@@ -90,15 +90,12 @@ form{
   font-size:150%;
 }
 
-/* .form-pt1{
-  display:flex;
-  flex-direction: column;
+ .form-pt1 *{
+  display:block;
+  margin:auto;
+  text-align:center;
 }
 
-.form-pt2{
-  display:flex;
-  flex-direction:column;
-} */
 
 .form-overall{
   display: flex;
@@ -153,14 +150,7 @@ form{
   /* text-align:center; only centers items inline content w/in a block, not block itself */
 }
 
-#naming>i{
-  background-color:rgb(134, 134, 179);
-  /* font-family: "Big Shoulders Stencil", sans-serif; */
-  font-size:80%;
-  padding:1%;
-}
-
-#naming{
+#naming{  /*This is my "Header*/
   background-color:rgb(134, 134, 179);
   /* font-family: "Big Shoulders Stencil", sans-serif; */
   border-radius: 15px;
@@ -168,6 +158,13 @@ form{
   flex-direction: column; 
   font-size: 400%;
   padding:1.5%;
+}
+
+#naming>i{
+  background-color:rgb(134, 134, 179);
+  /* font-family: "Big Shoulders Stencil", sans-serif; */
+  font-size:80%;
+  padding:1%;
 }
 
 nav{
