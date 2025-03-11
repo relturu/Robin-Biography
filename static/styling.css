@@ -1,6 +1,6 @@
 *{
   background: rgb(255, 249, 224);
-  color: rgb(56, 49, 20);
+  color: rgb(38, 33, 11);
   /* font-family: Arial, sans-serif; */
   font-family: Roboto, sans-serif;
   /* alr using padding */
@@ -52,6 +52,17 @@ body>main,body>header,body>nav{
 
 .contact{
   font-size:200%;
+}
+
+#contact_submit-shape{
+  border-radius:15px;
+  font-size:100%;
+  margin-top:3%;
+}
+
+#contact_submit-shape:hover{
+  background-color:rgb(134, 134, 179);
+  color: white;
 }
 
 .cv-headers{
@@ -111,9 +122,10 @@ form{
 
 #haiku{
   background-color:rgb(134, 134, 179);
+  border-radius:15px;
   font-size:200%;
-  padding-top:0.5%;
-  padding-bottom:0.5%;
+  /* padding-top:0.5%; */
+  /* padding-bottom:0.5%; */
   padding-left:1.5%;
   padding-right:1.5%;
 }
@@ -141,10 +153,11 @@ form{
 
 #naming{
   background-color:rgb(134, 134, 179);
+  border-radius: 15px;
   display: flex;
   flex-direction: column; 
   font-size: 400%;
-  padding:1%;
+  padding:1.5%;
 }
 
 nav{
@@ -172,7 +185,9 @@ nav{
 }
 
 table{
+  display:flex;
   font-size:125%;
+  justify-content:center;
 }
 
 .topImg{
@@ -183,3 +198,23 @@ td>ul{
   margin-top:0%;
   vertical-align:top;
 }
+
+th{
+  background-color:rgb(38, 33, 11);
+  color:white;
+  /* padding-top:12px;
+  padding-bottom:12px; */
+  padding:1%;
+  width:fit-content;
+}
+
+td{
+  padding:1%;
+}
+
+table tr:nth-child(odd) td,
+table tr:nth-child(odd) td * {
+  background-color: rgb(134, 134, 179);
+  color:white;
+}
+
