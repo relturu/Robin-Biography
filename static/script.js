@@ -71,12 +71,12 @@ function greetingFunc(){
   // checks curr hour
   const d = new Date();
   const h = d.getHours();
-  if (window.location.pathname.includes("index.html")){
+  // if (window.location.pathname.includes("index.html")){
 
-  }
-  else{
-    return;
-  }
+  // }
+  // else{
+  //   return;
+  // }
   if (h<12){
     console.log("Good mornin'");
     document.getElementById("naming").innerHTML ="good mornin',<br> i'm nico robin, <i> archaeologist";
