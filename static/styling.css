@@ -125,6 +125,12 @@ form{
   padding-right:15%;
 }
 
+#fun_button-styling{
+  display:flex;
+  /* justify-content:center; // not workign?? */
+  color:red;
+}
+
 #haiku{
   background-color:rgb(134, 134, 179);
   border-radius:15px;
@@ -143,7 +149,7 @@ form{
   color:rgb(134, 134, 179);
   display:flex;
   font-size:150%;
-  justify-content:center;
+  justify-content:space-between;
   padding-top:5%;
   padding-bottom:5%;
   /* align-items:center; centers items in a flex container vertically */
