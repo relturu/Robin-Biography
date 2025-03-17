@@ -48,7 +48,7 @@ const L2 = ["Peach", "Nectarine", "Banana", "Plum"];
 function findTheBanana(L1){
   for (let i=0; i<4; i++){
     if(L1[i]=="Banana"){
-      console.log("found the Banana in " + i);
+      alert("found the Banana in " + i);
     }
   }
 }
@@ -60,23 +60,23 @@ findTheBanana(L2);
 
 function findTheBananaTwo(item, index, arr){
   if(arr[index]=="Banana"){
-    console.log("found the Banana in " + index);
+   alert("found the Banana in " + index);
   }
 }
 L1.forEach(findTheBananaTwo);
 
-// Task 9: Date Object and Conditional Greeting
+// Task 9: Date Object and Conditional Greeting & Task 10: Manipulating the DOM
 function greetingFunc(){
   // creates date object
   // checks curr hour
   const d = new Date();
   const h = d.getHours();
-  // if (window.location.pathname.includes("index.html")){
+  if (window.location.pathname.includes("index.html")){
 
-  // }
-  // else{
-  //   return;
-  // }
+  }
+  else{
+    return;
+  }
   if (h<12){
     console.log("Good mornin'");
     document.getElementById("naming").innerHTML ="good mornin',<br> i'm nico robin, <i> archaeologist";
@@ -97,4 +97,3 @@ function greetingFunc(){
 
 greetingFunc();
 
-// Task 10: Manipulating the DOM
