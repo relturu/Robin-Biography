@@ -4,6 +4,14 @@
 // diff b/w " and ' ?
 // return none?
 
+// can either download jquery - only if extensive editing of lib
+// or link to the CDN (content delivery network) --> recommended
+
+// $(selector).action() , basic syntax for jQuery
+// $(p).hide(); find all paragraphs and hide
+// $(#mypara).hide(); find elem with id my para and hide
+// $("p.test").hide(); all pagraphs with class = "test"
+
 // Task 4: Basic Javascript Statement
 var x, y;
 x = 5;
@@ -48,7 +56,7 @@ const L2 = ["Peach", "Nectarine", "Banana", "Plum"];
 function findTheBanana(L1){
   for (let i=0; i<4; i++){
     if(L1[i]=="Banana"){
-      alert("found the Banana in " + i);
+      // alert("found the Banana in " + i);
     }
   }
 }
@@ -60,7 +68,7 @@ findTheBanana(L2);
 
 function findTheBananaTwo(item, index, arr){
   if(arr[index]=="Banana"){
-   alert("found the Banana in " + index);
+  //  alert("found the Banana in " + index);
   }
 }
 L1.forEach(findTheBananaTwo);
@@ -97,3 +105,21 @@ function greetingFunc(){
 
 greetingFunc();
 
+// CONTINUED FROM LAB 4
+
+function addYear(){
+  const d = new Date();
+  const y = d.getFullYear();
+  document.getElementById("footer_copyright-year").innerHTML +=y;
+}
+
+
+
+function validation(){
+  var userName = document.getElementById("hh");
+  var msg = document.getElementById("contact_validation-msg");
+  // add all other vars w/ the form content checking for blank response
+  if (!userName.checkValidity() || !userEmail.checkValidity()){
+    msg.innerHTML = "psl fill out forom correctly ty bebs";
+  }
+}

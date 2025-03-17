@@ -44,8 +44,9 @@
         
         <input type="checkbox" id="newfriend" name="newfriend" value="Yes">
         <label for="vehicle1"> I want to be considered a new friend!!!</label><br>
-        <input id="contact_submit-shape" type="submit" value="Submit"><br><br>
+        <input id="contact_submit-shape" type="submit" value="Submit" onclick="validate()"><br><br> <!--added validate here-->
       </form>
+      <p id="contact_validation-msg"></p> <!--added-->
     </div>
     <div class="form-pt2">
       <table class = "reach-me">
@@ -60,8 +61,8 @@
       </table>
     </div>
   </main>
-  <footer>
-    Copyright © 2025 relturu
+  <footer id="footer_copyright-year">
+    RelTuru &copy;
   </footer>
 </body>
 </html>

@@ -9,8 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
   </head>
-  <body>
+  <body onload="addYear()">
     <header>
       <div class = "AAB">
         <div id="naming">
@@ -38,12 +42,13 @@
         <img id="botleftimg" src="static/images/rob1.png" alt="nicoo">
         <p id="quote" class="roboto-thin"><i>
           "Fools who don't respect the past are doomed to repeat it."</i>
+          <!-- add a short and long intro  -->
         </p>
         <img id="botrightimg" src="static/images/rob2.png" alt="nicoyay">
       </div>
     </main>
-    <footer>
-      Copyright © 2025 relturu
+    <footer id="footer_copyright-year">
+      RelTuru &copy;
     </footer>
   </body>
 </html>
