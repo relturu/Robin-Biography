@@ -126,6 +126,39 @@ function showList(){
   myButton.style.display = "none";
 }
 
+/*
+In index.html, below your bio, add a section that will show or hide content when clicked
+Use jQuery to toggle between showing a short version of your bio and a longer version:
+Show the short bio initially
+When "Read More" is clicked, show the full bio and hide the "Read More" button
+When "Read Less" is clicked, show the "Read More" button again and hide the extended bio
+Include the jQuery library by adding the script reference to the <head> section
+Ensure the bio text and buttons are properly styled using CSS
+
+*/
+
+$(document).ready(function(){
+  $("#index_bio-long").hide();
+});
+
+function showBio(){
+  // const myList = document.getElementById("index_bio-long");
+  // myList.style.display = "block";
+  // const myButton = document.getElementById("index_button-styling");
+  // myButton.style.display = "none";
+  $(document).ready(function(){
+    $("#index_bio-short").hide();
+  });
+  const myButton = document.getElementById("index_button-styling");
+  myButton.style.display = "none";
+  $(document).ready(function(){
+    $("#index_bio-long").show();
+  });
+}
+
+
+
+
 
 function validation(){
   var userName = document.getElementById("hh");
