@@ -54,6 +54,36 @@ body>main,body>header,body>nav{
   font-size:200%;
 }
 
+#contact_pt1{
+  text-align:center;
+}
+
+/* #contact_pt2{ 
+  display:flex;
+  flex-direction:column;
+} */
+
+/* #item3{
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:5%;
+} */
+
+#contact_pt1 > iframe{
+  /* width:150%; when i adjust this, text doesn't stay centered */
+}
+
+.contact-overall{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+    /* gap: 10px;  */
+    /* Adds space between the columns */
+  width: 80%;
+}
+
 #contact_submit-shape{
   border-radius:15px;
   font-size:100%;
@@ -101,13 +131,12 @@ form{
   text-align:center;
 }
 
+.formt-pt1{
+  width:45%;
+}
 
-.form-overall{
-  display: flex;
-  justify-content: space-between;
-    /* gap: 10px;  */
-    /* Adds space between the columns */
-  width: 80%;
+.form-pt2{
+  width:25%;
 }
 
 .fun{
@@ -158,6 +187,17 @@ The parent container must have sufficient width
   */
 }
 
+#fun_img-chop{
+  /* border-radius:100%; */
+  width:20%;
+}
+
+#fun_img-chopcard{
+  border-radius: 50px;
+  margin-left:2.5%;
+  width:20%;
+}
+
 #haiku{
   background-color:rgb(134, 134, 179);
   border-radius:15px;
@@ -195,6 +235,24 @@ The parent container must have sufficient width
   /* display:block; */
   font-size:150%;
   margin-top: 7.5%;
+}
+
+#item2{
+  align-items:center;
+  /* border-radius:10px; nope apply it to image*/
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:5%;
+}
+
+
+#item3{
+  align-items:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:5%;
 }
 
 .my-resume{
