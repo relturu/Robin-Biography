@@ -157,14 +157,25 @@ function showBio(){
 }
 
 
-
-
-
 function validation(){
-  var userName = document.getElementById("hh");
+  var friendYes = document.getElementById("friendY");
+  var friendNo = document.getElementById("friendN");
+  var firstName = document.getElementById("firstName");
+  var lastName = document.getElementById("lastName");
+  var crew = document.getElementById("crew");
   var msg = document.getElementById("contact_validation-msg");
   // add all other vars w/ the form content checking for blank response
-  if (!userName.checkValidity() || !userEmail.checkValidity()){
-    msg.innerHTML = "psl fill out forom correctly ty bebs";
+  if ((!friendYes.checked && !friendNo.checked) || !firstName.checkValidity()
+      || firstName.value.trim() == "" || !lastName.checkValidity() 
+      || lastName.value.trim() == "" || crew.value.trim() == "" || !crew.checkValidity()){
+    msg.innerHTML = "psl fill out forom correctly ty<br>(fyi this msg will stay until you fix it)";
+    msg.style.backgroundColor="black";
+    msg.style.color="red";
+    msg.style.fontSize="150%";
+    msg.style.margin="5%";
+    msg.style.padding="5%";
+    return false;
   }
+  return true;
 }
+

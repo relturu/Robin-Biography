@@ -65,6 +65,11 @@ body>main,body>header,body>nav{
   color: white;
 }
 
+#contact_validation-msg{
+  color:red;
+  font-size:150%;
+}
+
 .cv-headers{
   text-align:left;
   vertical-align:top;

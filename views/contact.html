@@ -29,7 +29,8 @@
   <main class = "form-overall">
     <div class = "form-pt1">
       <a class="contact"><b>Contact Me</b></a><br><br>
-      <form>
+      <p id="contact_validation-msg"></p> <!--added-->
+      <form id = "myForm" onsubmit = "return validation()">
         <label for="friend">Are you a friend of the Strawhats?</label><br>
         <input type="radio" id="friendY" name="friend_status" value="Yes">
         <label for="friendY">I am!</label><br>
@@ -46,7 +47,6 @@
         <label for="vehicle1"> I want to be considered a new friend!!!</label><br>
         <input id="contact_submit-shape" type="submit" value="Submit" onclick="validate()"><br><br> <!--added validate here-->
       </form>
-      <p id="contact_validation-msg"></p> <!--added-->
     </div>
     <div class="form-pt2">
       <table class = "reach-me">
