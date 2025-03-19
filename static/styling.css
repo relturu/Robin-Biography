@@ -29,6 +29,18 @@
   align-items: center;
 }
 
+#advice_button-styling{
+  background-color:rgb(134, 134, 179);
+  border-color: rgb(134, 134, 179);
+  color:white;
+  /* display:flex; */
+  display: block;
+  font-size:125%;
+   /* margin: 0 auto; */
+  /* margin-top:5%; */
+  /* padding:1.5%; */ 
+}
+
 .allbot{
   display: flex;
   justify-content: space-between;
