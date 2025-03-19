@@ -172,20 +172,27 @@ The parent container must have sufficient width
   background-color:rgb(134, 134, 179);
 }
 
-#index_button-styling{
+#index_readless-button{
+  font-size:150%;
+  display:none;
+  margin-top:1%;
+  padding:0.5%;
+}
+
+#index_readmore-button{
   font-size:150%;
   margin-top:1%;
   padding:0.5%;
 }
 
 #index_bio-long{
-  display:block;
+  display:none;
   font-size:150%;
   margin-top: 7.5%;
 }
 
 #index_bio-short{
-  display:block;
+  /* display:block; */
   font-size:150%;
   margin-top: 7.5%;
 }

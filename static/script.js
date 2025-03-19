@@ -139,21 +139,21 @@ Ensure the bio text and buttons are properly styled using CSS
 
 $(document).ready(function(){
   $("#index_bio-long").hide();
+  $("#index_readless-button").hide();
 });
 
 function showBio(){
-  // const myList = document.getElementById("index_bio-long");
-  // myList.style.display = "block";
-  // const myButton = document.getElementById("index_button-styling");
-  // myButton.style.display = "none";
-  $(document).ready(function(){
-    $("#index_bio-short").hide();
-  });
-  const myButton = document.getElementById("index_button-styling");
-  myButton.style.display = "none";
-  $(document).ready(function(){
-    $("#index_bio-long").show();
-  });
+  $("#index_bio-short").hide()
+  $("#index_readmore-button").hide()
+  $("#index_bio-long").show()
+  $("#index_readless-button").show()
+}
+
+function hideBio(){
+  $("#index_bio-short").show();
+  $("#index_readmore-button").show();
+  $("#index_bio-long").hide();
+  $("#index_readless-button").hide();
 }
 
 
