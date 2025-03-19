@@ -120,15 +120,37 @@ form{
 }
 
 .fun-list{
+  display:none;
   font-size:150%;
   padding-left:15%;
   padding-right:15%;
 }
 
 #fun_button-styling{
-  display:flex;
-  /* justify-content:center; // not workign?? */
-  color:red;
+  background-color:rgb(134, 134, 179);
+  border-color: rgb(134, 134, 179);
+  color:white;
+  /* display:flex; */
+  display: block;
+  font-size:150%;
+  margin: 0 auto;
+  margin-top:5%;
+  padding:1.5%;
+
+  /*
+  The margin property sets the margin space around an element
+When you use margin: 0 auto, you're setting:
+
+0 for the top and bottom margins (no space above or below)
+auto for the left and right margins
+
+The auto value for horizontal margins tells the browser to automatically calculate and evenly distribute the available space on both sides of the element. This effectively centers the element horizontally within its parent container.
+Important requirements for margin: 0 auto to work:
+
+The element must be a block-level element (display: block)
+The element must have a defined width (less than 100% of the container)
+The parent container must have sufficient width
+  */
 }
 
 #haiku{

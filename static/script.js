@@ -112,7 +112,19 @@ function addYear(){
   const y = d.getFullYear();
   document.getElementById("footer_copyright-year").innerHTML +=y;
 }
+/*
+Create the showList() function in script.js to:
+Show the <ul> list (set its display to block)
+Hide the button by setting its display to none
+Style the button and the list with CSS so the list is hidden by default, and only visible after the button is clicked.
+*/
 
+function showList(){
+  const myList = document.getElementById("fun_id-list");
+  myList.style.display = "block";
+  const myButton = document.getElementById("fun_button-styling");
+  myButton.style.display = "none";
+}
 
 
 function validation(){
