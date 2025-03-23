@@ -11,7 +11,7 @@
 // $(p).hide(); find all paragraphs and hide
 // $(#mypara).hide(); find elem with id my para and hide
 // $("p.test").hide(); all pagraphs with class = "test"
-
+// jQuery.noConflict(); --> type error issues w/ base.js ??
 
 // Task 4: Basic Javascript Statement
 var x, y;
