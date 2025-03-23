@@ -12,6 +12,7 @@
 // $(#mypara).hide(); find elem with id my para and hide
 // $("p.test").hide(); all pagraphs with class = "test"
 
+
 // Task 4: Basic Javascript Statement
 var x, y;
 x = 5;
@@ -137,9 +138,22 @@ Ensure the bio text and buttons are properly styled using CSS
 
 */
 
-$(document).ready(function(){
-  $("#index_bio-long").hide();
-  $("#index_readless-button").hide();
+// $(document).ready(function(){
+//   $("#index_bio-long").hide();
+//   $("#index_readless-button").hide();
+// });
+
+$(document).ready(function() { //modifying ^^ to apply to only index
+  const currentPath = window.location.pathname;
+  
+  if (currentPath === "/" || 
+      currentPath === "/index.html" || 
+      currentPath === "/index" || 
+      currentPath === "") {
+    // index page only for bio read more/less button
+    $("#index_bio-long").hide();
+    $("#index_readless-button").hide();
+  }
 });
 
 function showBio(){
@@ -179,3 +193,48 @@ function validation(){
   return true;
 }
 
+/*
+Create a function called getAdvice().
+Use fetch() to request advice from https://api.adviceslip.com/advice
+Convert the response to JSON and extract the "advice" text
+Update the webpage by setting document.getElementById("adviceText").innerText to the advice
+Handle errors using .catch() to display an error message if something goes wrong
+Call getAdvice() when a button is clicked by adding onclick="getAdvice()" to your button in the HTML
+
+*/
+
+async function getAdvice(file) {
+  let myObject = await fetch("https://api.adviceslip.com/advice");
+  let myText = await myObject.text();
+ 
+  document.getElementById("adviceText").innerText = myText.advice;
+
+}
+
+function showAdvice(){
+  fetch("https://api.adviceslip.com/advice")
+    .then(response=> response.json())
+    .then(datam => {
+      document.getElementById("adviceText").innerText = datam.slip.advice;
+    })
+    .catch(error => {
+      console.error('Failed to get advice. ', error);
+      document.getElementById("adviceText").innerText = "No advice available (error)";
+    });
+}
+
+
+
+// async function getAdvice(file) {
+//   let myText = "Error retrieving advice";
+//   try{
+//     let myObject = await fetch("https://api.adviceslip.com/advice");
+//     let myText = await myObject.text();
+//   }
+//   catch(err){
+//     myText = "Error: " + err;
+//   }
+//   finally{
+//     document.getElementById("adviceText").innerHTML = myText;
+//   }
+// }

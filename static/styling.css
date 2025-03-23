@@ -32,6 +32,7 @@
 #advice_button-styling{
   background-color:rgb(134, 134, 179);
   border-color: rgb(134, 134, 179);
+  box-shadow: 3px 3px black;
   color:white;
   /* display:flex; */
   display: block;
@@ -87,13 +88,20 @@ body>main,body>header,body>nav{
   /* width:150%; when i adjust this, text doesn't stay centered */
 }
 
-.contact-overall{
+.mainLayout{ /* renamed for the homework from contact-overall*/
+  align-items:center;
   display: flex;
+  flex-direction:column; /*added for lab5*/
   flex-wrap:wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content:center;
     /* gap: 10px;  */
     /* Adds space between the columns */
   width: 80%;
+}
+
+.mainLayout>div{
+  margin-bottom:1.5%;
 }
 
 #contact_submit-shape{
@@ -148,7 +156,7 @@ form{
 }
 
 .form-pt2{
-  width:25%;
+  width:100%;
 }
 
 .fun{
